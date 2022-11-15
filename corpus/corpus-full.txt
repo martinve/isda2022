@@ -1,0 +1,353 @@
+Cats are animals.
+Plants are not animals.
+Animals have a head.
+Poison kills when eaten.
+Iron conducts electricity.
+Glass does not conduct electricity.
+John ingested poison.
+John was born in 1990.
+Are cats animals?
+Which of these is an animal: Percy or John?
+Are there four cats on the couch?
+Steve thinks John ingested poison.
+Born in a small town, she took the midnight train going anywhere.
+An example of camouflage is when something has the same color as its environment.
+An example of camouflage is when something is the same color as its environment.
+Percy is a cat.
+Three cats sit on the couch.
+Are cats animals?
+Does Percy have a head?
+Is John alive?
+Which of these is an animal: Percy or John?
+Are there four cats on the couch?
+Steve thinks John ingested poison.
+Donald Trump said John was born in 1990.
+In the book 'Hobbit' there are dragons.
+John ate two hamburgers yesterday.
+Three cats sat on the couch.
+Three cats sat on the couch at John's place.
+Poison causes harm to living things.
+John picked up the apple.
+John went to the office.
+John went to the kitchen.
+John dropped the apple.
+how many states border Texas?
+what states border texas and have a major river?
+what is the total population of the states that border texas?
+what states border states that border states that border states that border texas.
+A bee is a pollinating animal.
+A bird is a pollinating animal.
+An electrical conductor is a vehicle for the flow of electricity.
+An example of a change in the Earth is an ocean becoming a wooded area.
+An example of a chemical change is acid breaking down substances.
+An example of a fossil is a footprint in a rock.
+An example of a fossil is a paw print in rock.
+An example of a fossil is the bones of an extinct animal.
+An example of a mixture is clay mixed together.
+An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs.
+An example of a seasonal change is an animal growing thick fur for keeping warm in the winter.
+An example of a seasonal change is plants becoming dormant in the winter.
+An example of a seasonal change is plants dying in the winter.
+An example of an adaptation is camel humps.
+An example of an inherited behavior is a bird building a nest.
+An example of an instinct is the kangaroo 's ability to crawl into its mother 's pouch to drink milk.
+An example of an instinctive behavior is a baby bird pecking at its shell to hatch.
+An example of avoiding waste is using a material more than once.
+An example of avoiding waste is using an object more than once.
+An example of camouflage is an organism looking like leaves.
+An example of camouflage is when an organism looks like its environment.
+An example of camouflage is when something changes color in order to have the same color as its environment.
+An example of camouflage is when something has the same color as its environment.
+An example of camouflage is when something is the same color as its environment.
+An example of collecting data is measuring.
+An example of combining two substances is pouring one substance into the other substance.
+An example of conservation is avoiding waste.
+An example of conservation is not using fossil fuel.
+An example of creating an alternative fuel is turning plant material into fuel.
+An example of evaporation is a body of water drying up by absorbing heat energy.
+An example of hibernation is a frog burying itself in mud.
+An example of hitting something is dropping an object onto that something.
+An example of hunting is an otter cracking open clams with a rock.
+An example of migration is birds flying south in the winter.
+An example of moisture is water vapor in the atmosphere.
+An example of navigation is directing a boat.
+An example of playing a musical instrument is hitting the keys of a piano.
+An example of playing a musical instrument is strumming a guitar string.
+An example of protecting the environment is creating protected areas.
+An example of protecting the environment is reducing the amount of pollutants.
+An example of protecting the environment is reducing the amount of waste.
+An example of recycling is using an object to make a new object.
+An example of replacing a natural resource is planting new trees where a forest once stood.
+An example of reproduction is laying eggs.
+An example of seed dispersal is animals eating seeds.
+An example of seed dispersal is is an animal gathering seeds.
+An example of stormy weather is rain.
+An example of using tools is a chimpanzee digging for insects with a stick.
+An example of weathering is when a plant root grows into a crack in rock.
+An insect is a pollinating animal.
+August is during the winter in the southern hemisphere.
+DNA is a vehicle for passing inherited characteristics from parent to offspring.
+December is during the summer in the southern hemisphere.
+December is during the winter in the northern hemisphere.
+Earth's magnetic patterns are used for finding locations by animals that migrate.
+Earth's surface is made of rock.
+Earth's tilt on its axis causes seasons to occur.
+Earth is made of rock.
+Earth is the planet that is third closest to the Sun.
+Earth orbiting the Sun causes seasons to change.
+Galileo Galilei made improvements to the telescope to make better observations of celestial bodies.
+In the cellular respiration process carbon dioxide is a waste product.
+In the food chain process a green plant has the role of producer.
+In the food chain process an animal has the role of consumer which eats other animals for food.
+In the food chain process an animal has the role of consumer which eats producers for food.
+In the food chain process bacteria have the role of decomposer.
+In the food chain process fungi have the role of decomposer.
+In the food chain process some types of plankton have the role of producer.
+In the photosynthesis process carbon dioxide has the role of raw material.
+In the photosynthesis process oxygen has the role of waste product.
+In the respiration process carbon dioxide is a waste product.
+In the tree reproduction process a squirrel has the role of seed disperser.
+January is during the winter in the northern hemisphere.
+June is during the summer in the northern hemisphere.
+June is during the winter in the southern hemisphere.
+Louis Pasteur invented pasteurization.
+Matter in the gas phase has variable shape.
+Matter in the gas phase has variable volume.
+Matter in the liquid phase has definite volume.
+Matter in the liquid phase has variable shape.
+Matter in the solid phase has definite shape.
+Pluto is the planet that is ninth closest to the Sun.
+Vitamin D heals bones.
+A Punnett square is used to identify the percent chance of a trait being passed down from a parent to its offspring.
+A Rotation of the Earth on Earth 's axis takes 1 day.
+A Rotation of the Earth on itself takes one day.
+A balance is used for measuring mass of an object.
+A balance is used for measuring weight of a substance.
+A balloon contains gas.
+A barometer is used to measure air pressure.
+A bat births live young.
+A battery converts chemical energy into electrical energy.
+A battery is a source of electrical energy.
+A beach ball contains gas.
+A beak is used for catching prey by some birds.
+A berry contains seeds.
+A bicycle contains screws.
+A bird is warm-blooded.
+A body of water is a source of water.
+A bubble contains gas.
+A cactus stem is used for storing water.
+A cactus stores water.
+A camera is used for recording images.
+A candle is a source of light when it is burned.
+A canyon forming occurs over a period of millions of years.
+A canyon is made of rocks.
+A car engine is a source of heat.
+A car engine usually converts gasoline into motion and heat through combustion.
+A carbonated beverage contains dissolved carbon dioxide.
+A cavern is formed by carbonic acid in groundwater seeping through rock and dissolving limestone.
+A chipmunk eats acorns.
+A chloroplast contains chlorophyll.
+A closed circuit has continuous path.
+A community is made of many types of organisms in an area.
+A compass 's needle lines up with Earth 's magnetic poles.
+A compass is a kind of tool for determining direction by pointing north.
+A compass is used to navigate oceans.
+A compass is used to navigate seas.
+A complete electrical circuit is a source of electrical energy.
+A complete revolution of the Earth around the sun takes one Earth year.
+A complete revolution of the Earth around the sun takes one solar year.
+A computer controls a robot.
+A consumer can not produce its own food.
+A cycle happens repeatedly.
+A cycle occurs repeatedly.
+A decrease in visibility while driving can cause people to crash their car.
+A deer lives in a forest.
+A dense forest environment is often dark in color.
+A desert environment contains very little food.
+A desert environment has low rainfall.
+A desert environment is dry.
+A desert environment is low in availability of water.
+A desert environment is usually hot in temperature.
+A desert environment usually has a lot of sunlight.
+A different moon phase occurs once per week.
+A disperser disperses.
+A doorbell converts electrical energy into sound.
+A female insect lays eggs during the adult stage of an insect 's life cycle.
+A fish lives in water.
+A flashlight converts chemical energy into light energy.
+A flashlight emits light.
+A flashlight requires a source of electricity to produce light.
+A flower 's purpose is to produce seeds.
+A flower is a source of nectar.
+A flower produces pollen and seeds.
+A force acting on an object in the opposite direction that the object is moving can cause that object 's speed to decrease in a forward motion.
+A force continually acting on an object in the same direction that the object is moving can cause that object 's speed to increase in a forward motion.
+A forest environment is often green in color.
+A forest environment receives more rainfall than a desert.
+A frog eats insects.
+A glacier causes mechanical weathering.
+A glacier is made of ice.
+A glacier moves slowly.
+A graduated cylinder is a kind of instrument for measuring volume of liquids or objects.
+A graduated cylinder is used to measure volume of an object.
+A grassland environment receives more rainfall than a desert.
+A greenhouse is used to protect plants by keeping them warm.
+A greenhouse is used to protect plants from the cold.
+A hand dryer produces heat.
+A hot plate is a source of heat.
+A hot something is a source of heat.
+A hot substance is a source of heat.
+A human can pedal a bicycle.
+A human requires rest to be healthy.
+A human requires sleep to be healthy.
+A kettle is formed when chunks of ice left by glaciers melt.
+A landfill is a source of pollution.
+A landslide is when gravity rapidly moves rocks or soil downhill especially after a rain storm.
+A laser is used for producing light.
+A leaf absorbs sunlight to perform photosynthesis.
+A leaf performs photosynthesis.
+A lever is used for moving heavy objects.
+A light bulb converts electrical energy into light energy when it is turned on.
+A light bulb requires electrical energy to produce light.
+A line graph is used for showing change over time.
+A living thing is made of cells.
+A living thing requires nutrients to grow.
+A magnet attracts ferromagnetic metals through magnetism.
+A magnet attracts magnetic metals through magnetism.
+A mammal is warm-blooded.
+A mammal usually nurses its offspring.
+A mammal usually nurses its young.
+A meter stick is used to measure length.
+A mirror is used for reflecting light.
+A mirror reflects light.
+A monkey births live young.
+A moth undergoes metamorphosis.
+A mother births offspring.
+A mouse gives birth to live young.
+A nest is made of branches.
+A new season occurs four times per year.
+A new season occurs once per three months.
+A paper clip is often made of ferromagnetic metals.
+A phase change is when matter changes from one state into another state.
+A plane travels through the atmosphere.
+A planet is exposed to the heat of the star around which it revolves.
+A planet rotating causes cycles of day and night on that planet.
+A plant 's roots slowly break down rocks as the roots grow.
+A plant absorbs carbon dioxide from the air for photosynthesis.
+A plant cell contains chloroplasts.
+A plant light is used for help plants by mimicking sunlight.
+A plant requires a specific climate to grow and survive.
+A plant requires photosynthesis to grow.
+A plant requires soil for to grow.
+A plant requires sunlight for photosynthesis.
+A plant requires sunlight to grow.
+A plant requires water to grow.
+A plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant.
+A plant stem is the vehicle for transporting water and food from roots to the rest of the plant.
+A plants require water for to grow.
+A plateau is formed by a buildup of cooled lava.
+A polar bear requires a cold environment.
+A pollutions standard is a kind of standard for reducing pollutants emitted by factories.
+A predator eats other animals for food.
+A prism refracts light.
+A producer is a source of energy for consumers.
+A producer is a source of sugar in an ecosystem.
+A producer produces its own food.
+A pulley is used for lifting objects.
+A pulley is used to lift a flag on a flagpole.
+A pumpkin contains seeds.
+A quartz is made of six-sided transparent crystals.
+A radiator is a source of heat.
+A radio is used for communication.
+A rainbow is formed by refraction of light by splitting light into all different colors.
+A reflector is used to reflect light especially on vehicles.
+A renewable resource can be renewed.
+A renewable resource can be replaced.
+A reptile is cold-blooded.
+A revolution is when something revolves around something else.
+A revolution of the moon around the Earth takes 1 month.
+A riverbank is made of soil.
+A rocket engine is used to produce thrust by pushing gases out at a high speed.
+A ruler is used for measuring the length of an object.
+A salamander eats insects.
+A sandbar is formed by water moving sediment downstream.
+A satellite orbits a planet.
+A scale is used for measuring weight.
+A scar is an acquired characteristic.
+A sea turtle lives in the ocean.
+A seed is used for storing food for a new plant.
+A seismograph is a kind of tool for measuring the size of an earthquake.
+A seismograph is used for measuring the size of an earthquake.
+A seismometer is used to measure the strength or magnitude of an earthquake.
+A shower is a source of hot water for washing.
+A sifter is used for separating mixtures.
+A simple machine requires mechanical energy to function.
+A single-cell organism can survive without the help of other cells.
+A single-cell organism cannot specialize.
+A skinny beak is used for obtaining food by a bird from small spaces.
+A skunk produces a bad odor.
+A soda can is made of aluminum.
+A solar eclipse could only happen during the new moon.
+A solar panel converts sunlight into electricity.
+A solution is made of one substance dissolved in another substance.
+A source of something supplies that something.
+A spider web is used to capture food by spiders.
+A squid produces thrust by pushing water out of its body.
+A star is a source of light energy through nuclear reactions.
+A star is a source of light through nuclear reactions.
+A star is made of gases.
+A stem is a source of support for a plant.
+A stem is used to store water by some plants.
+A stinger is used for defense by a wasp.
+A stopwatch is used to measure time.
+A stove generates heat for cooking usually.
+A switch is used to stop the flow of current in an electrical circuit.
+A tape measure is used to measure distance.
+A tape measure is used to measure length.
+A tectonic plate moves along a fault line.
+A telescope is used for observing stars.
+A telescope is used for observing the sky.
+A thermal conductor is made of materials that conduct thermal energy.
+A thermal energy conductor transfers heat from hotter objects to cooler objects.
+A thermal insulator slows the transfer of heat.
+A thermometer is used to measure temperature.
+A toaster converts electrical energy into heat energy for toasting.
+A tree can be replaced by planting a new tree.
+A tree growing a tree-growth ring occurs once per year.
+A tree is a source of food for animals in an ecosystem.
+A tree is a source of food for birds in an ecosystem.
+A trunk is a source of support for a tree.
+A valley is formed by a river flowing.
+A warm front causes cloudy and rainy weather.
+A warm something is a source of heat.
+A white object reflects all visible light.
+A windmill converts wind energy into electricity.
+A windmill does not create pollution.
+Absorbing sunlight causes objects to heat.
+Acid can cause chemical change.
+Acid rain has a negative impact on water quality.
+Adaptation is when an organism develops a trait over time for survival.
+Adaptations are used for survival.
+Adding heat to an object sometimes causes chemical reactions.
+Adding heat to something kills viruses in that something.
+Adding salt to a liquid decreases the melting point of that liquid.
+Adding salt to a solid decreases the freezing point of that solid.
+Adult amphibians live on land.
+Adulthood is a stage in the life cycle process.
+Air is a vehicle for sound.
+Algae is found in bodies of water.
+All animals breathe.
+All cells perform cellular respiration.
+All living things eliminate waste.
+All living things grow.
+All minerals are formed by natural geological processes.
+Alligators eat fish.
+Alloys are made of two or more metals.
+Alternative fuel is usually a renewable resource.
+what is the name of justin bieber brother?
+what character did natalie portman play in star wars?
+where donald trump went to college?
+what countries around the world speak french?
+The city councilmen refused the demonstrators a permit because they advocated violence.
+The trophy doesn't fit into the brown suitcase because it's too small.
+Joan made sure to thank Susan for all the help she had given.

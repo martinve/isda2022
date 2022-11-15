@@ -1,0 +1,232 @@
+('Snt: ', ['Cats are animals.\n'])
+DRS-0( cat( X1 ) animal( X1 ) be( E1 ) Agent( E1 X2 ) Patient( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T2 ) )
+---
+
+('Snt: ', ['Animals have a head.\n'])
+DRS-0( animal( X1 ) head( X1 ) have( E1 ) Agent( E1 X1 ) Patient( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['Percy is a cat.\n'])
+DRS-0( percy( X1 ) cat( X1 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['Are cats animals?\n'])
+DRS-0( cat( X1 ) animal( E1 ) cat( E1 ) Equ( X2 X3 ) animal( X3 ) Agent( E1 X3 ) Co-Agent( E1 X3 ) )
+---
+
+('Snt: ', ['Does Percy have a head?\n'])
+DRS-0( percy( X1 ) head( X1 ) have( E1 ) Agent( E1 X1 ) Patient( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['Plants are not animals.\n'])
+DRS-0( plant( X1 ) NOT( DRS-0( animal( X1 ) be( E1 ) Agent( E1 X1 ) Patient( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['Iron conducts electricity.\n'])
+DRS-0( iron( X1 ) electricity( X1 ) conduct( E1 ) Agent( E1 X2 ) Agent( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['Glass does not conduct electricity.\n'])
+DRS-0( glass( X1 ) NOT( DRS-0( electricity( X1 ) conduct( E1 ) Agent( E1 X1 ) Theme( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['An electrical conductor is a vehicle for the flow of electricity.\n'])
+DRS-0( Topic( S1 X1 ) electrical( S1 ) conductor( X1 ) vehicle( X2 ) flow( X3 ) electricity( X4 ) Of( X3 X4 ) For( X2 X3 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['Conductor is a person who conducts an orchestra.\n'])
+DRS-0( conductor( X1 ) person( X1 ) Equ( X1 X2 ) orchestra( X3 ) conduct( E1 ) Agent( E1 X2 ) Theme( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) be( E2 ) Agent( E2 X1 ) Theme( E2 X3 ) now( T1 ) Temp_included( E2 T3 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['Steve is a conductor.\n'])
+DRS-0( steve( X1 ) conductor( X1 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['John ingested poison.\n'])
+DRS-0( john( X1 ) ingest( E1 ) Agent( E1 X2 ) poison( E1 ) now( T1 ) Temp_included( E1 T2 ) Temp_before( T2 T1 ) )
+---
+
+('Snt: ', ['John was born in 1990.\n'])
+DRS-0( john( X1 ) bear( E1 X1 ) Stimulus( E1 X1 ) Timex( X1 TIME_NUMBER ) In( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Temp_before( T2 T1 ) )
+---
+
+('Snt: ', ['Steve thinks John ingested poison.\n'])
+DRS-0( steve( X1 ) think( E1 ) Agent( E1 P1 ) Topic( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) P1( DRS-0( john( X1 ) poison( X2 ) ingested( E2 ) Agent( E3 P1 ) Agent( E3 X3 ) now( T1 ) Temp_included( E3 T2 ) Temp_before( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['Poison kills when eaten.\n'])
+DRS-0( poison( X1 ) kill( E1 ) Patient( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) eaten( E2 ) Patient( E2 X3 ) While( E1 X2 ) )
+---
+
+('Snt: ', ['Born in a small town, she took the midnight train going anywhere.\n'])
+DRS-0( Topic( S1 X1 ) small( S1 ) town( X1 ) That( X1 P1 ) In( E1 X1 ) P1( DRS-0( person( X1 ) Topic( S2 X2 ) midnight( S2 ) train( X2 ) take( E1 ) Agent( E1 X1 ) Patient( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Temp_before( T2 T1 ) go( E2 ) Theme( E2 X1 ) anywhere( E2 ) anywhere( E2 ) now( T1 ) Temp_included( E2 T3 ) Temp_before( T3 T1 ) Topic( S3 X3 ) small( S3 ) town( X3 ) In( E2 X3 ) ) ) )
+---
+
+('Snt: ', ['The city councilmen refused the demonstrators a permit because they advocated violence.\n'])
+SDRS( BECAUSE( K1 K2 ) K1( DRS-0( city( X1 ) Equ( X2 X1 ) councilman( X2 ) ) ) K2( DRS-0( a( X3 ) the( X4 ) refuse( E1 ) Agent( E1 X2 ) Theme( E1 X4 ) now( T1 ) Temp_included( E1 T2 ) Temp_before( T2 T1 ) ) ) )
+---
+
+('Snt: ', ["The trophy doesn't fit into the brown suitcase because it's too small.\n"])
+SDRS( CONTINUATION( K1 K2 ) K1( DRS-0( trophy( X1 ) POS( SDRS( BECAUSE( K2 K3 ) K2( DRS-0( fit( S1 ) Patient( E1 X1 ) the( X1 ) Of( X2 X1 ) brown( X2 ) Into( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T1 T2 ) n't( E1 ) ) ) K3( DRS-0( thing( X1 ) too( S1 ) Topic( S1 X1 ) 's( S1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) ) ) ) ) K4( DRS-0( trophy( X3 ) ) ) )
+---
+
+('Snt: ', ['Joan made sure to thank Susan for all the help she had given.\n'])
+DRS-0( joan( X1 P1 ) make( E1 ) Recipient( E1 P1 ) Topic( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Temp_before( T2 T1 ) P1( DRS-0( sure( S1 ) Agent( E1 X1 ) Theme( E1 P1 ) IMP( DRS-0( help( X2 ) Equ( X3 X2 ) ) DRS-0( female( X1 ) give( E2 ) Agent( E2 X3 ) Theme( E2 X1 ) now( T1 ) Temp_before( T2 T1 ) now( T1 ) Temp_included( E2 T3 ) Temp_before( T2 T1 ) For( E1 X3 ) ) ) ) ) )
+---
+
+('Snt: ', ['What states border Texas and have a major river?\n'])
+DRS-0( state( X1 ) texas( X1 ) Subset_of( X1 X2 ) Topic( S1 X3 ) major( S1 ) river( X3 ) have( E1 ) Agent( E1 X2 ) Patient( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['What is the total population of the states that border Texas?\n'])
+DRS-0( DUP( DRS-0( thing( X1 ) ) DRS-0( Topic( S1 X1 ) total( S1 ) population( X1 ) the( X2 ) that( X3 ) Equ( X4 X3 ) border( X4 ) Rel( X2 X4 ) Of( X3 X2 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['What states border states that border states that border states that border Texas.\n'])
+DRS-0( thing( X1 ) )
+---
+
+('Snt: ', ['A laser is used for producing light.\n'])
+DRS-0( laser( X1 ) use( E1 ) Agent( E1 X1 ) light( X1 ) produce( E2 ) Agent( E2 X2 ) Patient( E2 X1 ) For( E1 E2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A leaf absorbs sunlight to perform photosynthesis.\n'])
+DRS-0( leaf( X1 ) sunlight( X2 ) absorbs( E1 ) Agent( E1 P1 ) Patient( E1 X2 ) Result( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) P1( DRS-0( photosynthesis( X3 ) perform( E2 ) Agent( E2 X2 ) Theme( E2 X3 ) ) ) )
+---
+
+('Snt: ', ['A flashlight converts chemical energy into light energy.\n'])
+DRS-0( flashlight( X1 ) chemical( E1 ) Of( X2 X3 ) convert( E1 ) Agent( E1 X3 ) Patient( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A flashlight emits light.\n'])
+DRS-0( flashlight( X1 ) emits( E1 P1 ) Agent( E1 X2 ) Patient( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T2 ) P1( DRS-0( light( S1 ) Patient( S1 X3 ) ) ) )
+---
+
+('Snt: ', ['A flashlight requires a source of electricity to produce light.\n'])
+DRS-0( flashlight( X1 ) a( E1 ) of( X2 ) Of( X3 X2 ) require( E1 ) Agent( E1 X1 ) Patient( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) P1( DRS-0( Equ( X3 X3 ) produce( X4 ) to( E2 ) Agent( E2 X3 ) Co-Agent( E2 X4 ) ) ) )
+---
+
+('Snt: ', ['A light bulb converts electrical energy into light energy when it is turned on.\n'])
+SDRS( WHEN( K1 K2 ) K1( DRS-0( Topic( S1 X1 ) light( S1 ) bulb( X1 ) Topic( S2 X2 ) electrical( S2 ) energy( X3 ) convert( E1 ) Agent( E1 X1 ) Patient( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) Patient( S2 X2 ) light( S2 ) energy( X3 ) Into( E1 X3 ) ) ) K2( DRS-0( thing( X1 ) it( E2 ) Patient( E2 X1 ) be( E2 ) now( T1 ) Temp_included( E2 T3 ) Equ( T3 T1 ) ) ) K3( DRS-0( Topic( S2 X2 ) light( S2 ) bulb( X2 ) Topic( S2 X2 ) electrical( S2 ) energy( X2 ) convert( E3 ) Agent( E3 X3 ) Patient( E3 X2 ) now( T1 ) Temp_included( E3 T4 ) Equ( T4 T1 ) Patient( S3 X3 ) light( S3 ) energy( X3 ) Into( E3 X3 ) ) ) K4( DRS-0( thing( X2 ) it( E4 ) Patient( E4 X2 ) be( E4 ) now( T1 ) Temp_included( E4 T4 ) Equ( T4 T1 ) ) ) )
+---
+
+('Snt: ', ['A light bulb requires electrical energy to produce light.\n'])
+DRS-0( Topic( S1 X1 ) electrical( S1 ) energy( P1 ) require( E1 ) Agent( E1 X2 ) Patient( E1 P1 ) Topic( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) P1( DRS-0( produce( E2 ) Agent( E2 P1 ) Patient( E2 P1 ) ) ) )
+---
+
+('Snt: ', ['A mirror is used for reflecting light.\n'])
+DRS-0( mirror( X1 ) use( E1 ) Agent( E1 X1 ) light( X1 ) reflect( E2 ) Agent( E2 X2 ) Theme( E2 X1 ) For( E1 E2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A mirror reflects light.\n'])
+DRS-0( mirror( X1 ) reflect( E1 P1 ) Agent( E1 X2 ) Patient( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T2 ) P1( DRS-0( light( S1 ) Patient( S1 X3 ) ) ) )
+---
+
+('Snt: ', ['A plant light is used for help plants by mimicking sunlight.\n'])
+DRS-0( Topic( S1 X1 ) by( S1 ) mimic( X1 ) by( E1 ) Agent( E1 X2 ) Theme( E1 X1 ) By( E1 X3 ) )
+---
+
+('Snt: ', ['A plant requires sunlight for photosynthesis.\n'])
+DRS-0( plant( X1 ) sunlight( X1 ) photosynthesis( X2 ) For( E1 X2 ) require( E1 ) Agent( E1 X1 ) Recipient( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A plant requires sunlight to grow.\n'])
+DRS-0( plant( X1 ) sunlight( X2 ) require( E1 ) Agent( E1 X2 ) Patient( E1 X2 ) Result( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) P1( DRS-0( grow( E2 ) Theme( E2 X2 ) now( T1 ) Temp_included( E2 T3 ) Equ( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['A prism refracts light.\n'])
+DRS-0( prism( X1 ) Of( X2 X3 ) refract( X2 ) Equ( X2 X3 ) light( S1 ) Patient( E1 X3 ) Agent( E1 X2 ) Patient( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A rainbow is formed by refraction of light by splitting light into all different colors.\n'])
+DRS-0( rainbow( X1 ) form( E1 ) Location( E1 X1 ) refraction( X1 ) Equ( X1 X2 ) light( S1 ) by( E2 ) Agent( E2 E1 ) Patient( E2 X2 ) by( E3 ) Patient( E3 X2 ) all( X2 ) all( X3 ) Into( E3 X2 ) By( E1 E3 ) By( E1 X3 ) IMP( DRS-0( all( X4 ) all( X5 ) NOT( DRS-0( Equ( X3 X5 ) ) ) ) DRS-0( Into( E1 X2 ) ) ) )
+---
+
+('Snt: ', ['A reflector is used to reflect light especially on vehicles.\n'])
+DRS-0( reflector( X1 ) use( E1 ) Agent( E1 X2 ) Theme( E1 P1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) P1( DRS-0( light( X3 ) reflect( E2 ) Agent( E2 X2 ) Theme( E2 X3 ) especially( E2 ) vehicle( X4 ) On( E2 X4 ) ) ) )
+---
+
+('Snt: ', ['A star is a source of light energy through nuclear reactions.\n'])
+DRS-0( Topic( S1 X1 ) star( S1 ) a( X2 ) Topic( S2 X3 ) of( S2 ) light( X3 ) Topic( S2 X2 ) through( S2 ) nuclear( X2 ) Through( X3 X2 ) Of( X3 X2 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A star is a source of light through nuclear reactions.\n'])
+DRS-0( Topic( S1 X1 ) star( S1 ) a( X2 ) of( X3 ) Topic( S2 X2 ) through( S2 ) nuclear( X2 ) Through( X3 X2 ) Of( X3 X2 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A solar panel converts sunlight into electricity.\n'])
+DRS-0( Topic( S1 X1 ) solar( S1 ) panel( X1 ) sunlight( X2 ) convert( E1 ) Agent( E1 X3 ) Patient( E1 X2 ) electricity( X3 ) Into( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A white object reflects all visible light.\n'])
+DRS-0( Topic( S1 X1 ) white( S1 ) object( X1 ) IMP( DRS-0( Topic( S2 X2 ) visible( S2 ) light( X3 ) ) DRS-0( reflect( E1 ) Agent( E1 ) Agent( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['Absorbing sunlight causes objects to heat.\n'])
+DRS-0( thing( X1 ) object( E1 P1 ) cause( E1 P1 ) Of( E1 X2 ) object( X3 ) Agent( E1 X2 ) Patient( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) P1( DRS-0( heat( E2 E1 ) Patient( E2 X3 ) now( T1 ) Temp_included( E2 T3 ) Equ( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['A candle is a source of light when it is burned.\n'])
+SDRS( WHEN( K1 K2 ) K1( DRS-0( candle( X1 ) a( X2 ) of( X3 ) Of( X2 X3 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) K2( DRS-0( thing( X1 ) it( E2 ) Patient( E2 X1 ) now( T1 ) Temp_included( E2 T3 ) Equ( T3 T1 ) ) ) K3( DRS-0( candle( X4 ) a( X5 ) of( X6 ) Of( X5 X7 ) be( E3 ) Agent( E3 X4 ) Theme( E3 X5 ) now( T1 ) Temp_included( E3 T4 ) Equ( T4 T1 ) ) ) K4( SDRS( THAT( K6 K7 ) K5( DRS-0( thing( X4 ) it( E4 ) Patient( E4 X4 ) now( T1 ) Temp_included( E4 T4 ) Equ( T4 T1 ) ) ) K6( SDRS( CONTINUATION( K7 K8 ) WHEN( K8 K9 ) K7( DRS-0( thing( X2 ) it( E2 ) Patient( E2 X2 ) now( T1 ) Temp_included( E2 T3 ) Equ( T2 T1 ) ) ) K8( SDRS( CONTINUATION( K10 K11 ) WHEN( K11 K12 ) K9( SDRS( CONTINUATION( K10 K11 ) PARALLEL( K10 K11 ) K10( DRS-0( thing( X7 ) it( E3 ) Patient( E3 X7 ) now( T1 ) Temp_included( E3 T3 ) Equ( T2 T1 ) ) ) K11( SDRS( WHEN( K13 K12 ) K12( DRS-0( candle( X8 ) a( X8 ) of( X8 ) Of( X8 X9 ) be( E4 ) Agent( E4 X8 ) Theme( E4 X8 ) now( T1 ) Temp_included( E4 T2 ) Equ( T2 T1 ) ) ) K13( DRS-0( thing( X8 ) it( E2 ) Patient( E2 X8 ) now( T1 ) Temp_included( E2 X7 ) Equ( T2 T1 ) ) ) ) ) ) ) K14( SDRS( CONTINUATION( K15 K17 ) WHEN( K15 K17 ) K15( DRS-0( candle( X7 ) a( X8 ) Equ( X8 X8 ) of( S1 ) Patient( S1 X8 ) ) ) K16( SDRS( CONTINUATION( K17 K21 ) WHEN( K17 K18 ) K17( DRS-0( thing( X7 ) it( E3 ) Patient( E3 X7 ) now( T1 ) Temp_included( E3 T3 ) Equ( T2 T1 ) ) ) K18( SDRS( CONTINUATION( K19 K21 ) WHEN( K19 K21 ) K19( DRS-0( thing( X8 ) it( E4 ) Patient( E4 X8 ) now( T1 ) Temp_included( E4 T3 ) Equ( T2 T1 ) ) ) K20( SDRS( CONTINUATION( K21 K23 ) WHEN( K21 K22 ) K21( DRS-0( candle( X8 ) a( X8 ) of( X8 ) Of( X8 X9 ) be( E2 ) Agent( E2 X8 ) Theme( E2 X8 ) now( T1 ) Temp_included( E2 T3 ) Equ( T2 T1 ) ) ) K22( SDRS( CONTINUATION( K23 K24 ) WHEN( K23 K24 ) K23( DRS-0( thing( X8 ) it( E3 ) Patient( E3 X8 ) now( T1 ) Temp_included( E3 T3 ) Equ( T2 T1 ) ) ) K24( DRS-0( candle( X8 ) a( X8 ) of( X8 ) Of( X8 X9 ) be( E4 ) Agent( E4 X8 ) Theme( E4 X8 ) now( T1 ) Temp_included( E4 T4 ) Equ( T2 T1 ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) )
+---
+
+('Snt: ', ['A desert environment usually has a lot of sunlight.\n'])
+DRS-0( desert( X1 ) For( X1 ) environment( X1 ) a( X2 ) of( X3 ) Of( X2 X3 ) have( E1 ) Agent( E1 X1 ) Patient( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) usually( E1 ) usually( E1 ) )
+---
+
+('Snt: ', ['A revolution is when something revolves around something else.\n'])
+SDRS( WHEN( K1 K2 ) K1( DRS-0( revolution( X1 ) be( E1 ) Agent( E1 X1 ) Topic( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) DUP( DRS-0( thing( X2 ) ) DRS-0( thing( X1 ) revolve( E2 ) Theme( E2 X1 ) now( T1 ) Temp_included( E2 T2 ) Equ( T2 T1 ) ) ) ) ) K2( DRS-0( thing( X1 ) be( E3 ) Agent( E3 X1 ) Topic( E3 E1 ) now( T1 ) Temp_included( E3 T2 ) Equ( T2 T1 ) ) ) K3( DRS-0( thing( X1 ) revolve( E4 ) Theme( E4 ) now( T1 ) Temp_included( E4 T2 ) Equ( T2 T1 ) ) ) K4( SDRS( CONTINUATION( K6 K7 ) WHEN( K6 K7 ) K5( DRS-0( thing( X1 ) revolve( E5 ) Theme( E5 ) now( T1 ) Temp_included( E5 T2 ) Equ( T2 T1 ) ) ) K6( SDRS( CONTINUATION( K7 K10 ) WHEN( K10 K11 ) K7( DRS-0( thing( X1 ) be( E1 ) Agent( E1 X1 ) Topic( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) K8( SDRS( CONTINUATION( K10 K11 ) WHEN( K11 K13 ) K9( DRS-0( thing( X1 ) revolve( E2 ) Theme( E2 X1 ) now( T1 ) Temp_included( E2 T3 ) Equ( T2 T1 ) ) ) K10( DRS-0( revolution( X3 ) be( E3 ) Agent( E3 X3 ) now( T1 ) Temp_included( E3 T1 ) Equ( T1 T1 ) ) ) K11( SDRS( CONTINUATION( K13 K12 ) WHEN( K13 K12 ) K12( DRS-0( thing( X1 ) revolve( E4 ) Theme( E4 X1 ) now( T1 ) Temp_included( E4 T2 ) Equ( T2 T1 ) ) ) K13( DRS-0( revolution( X2 ) be( E5 ) Agent( E5 X2 ) now( T1 ) Temp_included( E5 T2 ) Equ( T2 T1 ) ) ) ) ) ) ) ) ) ) ) )
+---
+
+('Snt: ', ['A complete revolution of the Earth around the sun takes one Earth year.\n'])
+DRS-0( Topic( S1 X1 ) complete( S1 ) revolution( X1 ) the( X2 ) Around( X1 X3 ) Card( X4 CARD_NUMBER ) earth( X1 ) sun( E1 ) Agent( E1 X1 ) Theme( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) one( X5 ) On( E1 X5 ) )
+---
+
+('Snt: ', ['A complete revolution of the Earth around the sun takes one solar year.\n'])
+DRS-0( Topic( S1 X1 ) complete( S1 ) revolution( X1 ) earth( X2 ) the( X3 ) Around( X2 X3 ) Of( X1 X2 ) Card( X4 CARD_NUMBER ) Topic( S2 X1 ) one( S2 ) solar( X1 ) sun( E1 ) Agent( E1 X1 ) Theme( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A revolution is when something revolves around something else.\n'])
+SDRS( WHEN( K1 K2 ) K1( DRS-0( revolution( X1 ) be( E1 ) Agent( E1 X1 ) Topic( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) DUP( DRS-0( thing( X2 ) ) DRS-0( thing( X1 ) revolve( E2 ) Theme( E2 X1 ) now( T1 ) Temp_included( E2 T2 ) Equ( T2 T1 ) ) ) ) ) K2( DRS-0( thing( X1 ) be( E3 ) Agent( E3 X1 ) Topic( E3 E1 ) now( T1 ) Temp_included( E3 T2 ) Equ( T2 T1 ) ) ) K3( DRS-0( thing( X1 ) revolve( E4 ) Theme( E4 ) now( T1 ) Temp_included( E4 T2 ) Equ( T2 T1 ) ) ) K4( SDRS( CONTINUATION( K6 K7 ) WHEN( K6 K7 ) K5( DRS-0( thing( X1 ) revolve( E5 ) Theme( E5 ) now( T1 ) Temp_included( E5 T2 ) Equ( T2 T1 ) ) ) K6( SDRS( CONTINUATION( K7 K10 ) WHEN( K10 K11 ) K7( DRS-0( thing( X1 ) be( E1 ) Agent( E1 X1 ) Topic( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) K8( SDRS( CONTINUATION( K10 K11 ) WHEN( K11 K13 ) K9( DRS-0( thing( X1 ) revolve( E2 ) Theme( E2 X1 ) now( T1 ) Temp_included( E2 T3 ) Equ( T2 T1 ) ) ) K10( DRS-0( revolution( X3 ) be( E3 ) Agent( E3 X3 ) now( T1 ) Temp_included( E3 T1 ) Equ( T1 T1 ) ) ) K11( SDRS( CONTINUATION( K13 K12 ) WHEN( K13 K12 ) K12( DRS-0( thing( X1 ) revolve( E4 ) Theme( E4 X1 ) now( T1 ) Temp_included( E4 T2 ) Equ( T2 T1 ) ) ) K13( DRS-0( revolution( X2 ) be( E5 ) Agent( E5 X2 ) now( T1 ) Temp_included( E5 T2 ) Equ( T2 T1 ) ) ) ) ) ) ) ) ) ) ) )
+---
+
+('Snt: ', ['A revolution of the moon around the Earth takes 1 month.\n'])
+DRS-0( revolution( X1 ) moon( X1 ) the( X1 ) Around( X1 X2 ) Of( X1 X3 ) earth( E1 ) Patient( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) 1( X3 ) On( E1 X3 ) Timex( X4 TIME_NUMBER ) 1( X4 ) In( E1 X1 ) )
+---
+
+('Snt: ', ['A planet is exposed to the heat of the star around which it revolves.\n'])
+DRS-0( planet( X1 ) expose( E1 ) Theme( E1 X1 ) heat( X2 ) the( X3 ) thing( X2 ) thing( X2 ) Equ( X2 X2 ) it( E2 ) Agent( E2 X2 ) Theme( E2 X2 ) now( T1 ) Temp_included( E2 T2 ) Equ( T2 T1 ) Of( X3 X2 ) To( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['A satellite orbits a planet.\n'])
+DRS-0( satellite( X1 ) a( E1 ) orbit( E1 ) Agent( E1 X1 ) Theme( E1 X2 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) IMP( DRS-0( a( X3 ) ) DRS-0( Equ( X3 X3 ) ) ) )
+---
+
+('Snt: ', ['Pluto is the planet that is ninth closest to the Sun.\n'])
+DRS-0( pluto( X1 ) planet( X1 ) Equ( X1 X2 ) Topic( S1 X3 ) be( S1 ) ninth( S2 ) to( X4 ) To( S2 X4 ) now( T1 ) Temp_included( S2 T2 ) Equ( T2 T1 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X2 ) now( T1 ) Temp_included( E1 T3 ) Equ( T4 T1 ) IMP( DRS-0( NOT( DRS-0( Equ( X2 X2 ) ) ) ) DRS-0( Least( X2 X1 ) ) ) )
+---
+
+('Snt: ', ['A planet rotating causes cycles of day and night on that planet.\n'])
+DRS-0( Topic( S1 X1 ) planet( S1 ) rotate( E1 ) Theme( E1 X1 ) cause( X2 ) Of( X1 X3 ) cycle( X1 ) Subset_of( X1 X3 ) Subset_of( X4 X3 ) day( X3 ) night( X4 ) Of( X3 X2 ) cause( E2 ) Of( X5 X6 ) cycle( X5 ) Subset_of( X6 X7 ) Subset_of( X8 X7 ) day( X6 ) night( X8 ) Of( X5 T1 ) planet( X8 ) On( X5 X8 ) cause( E3 ) Of( X3 X8 ) cycle( X3 ) Subset_of( X8 X9 ) Subset_of( X10 X8 ) day( X8 ) night( X8 ) Of( X3 X8 ) )
+---
+
+('Snt: ', ['Earth is the planet that is third closest to the Sun.\n'])
+DRS-0( earth( X1 ) planet( X1 ) Equ( X1 X2 ) Topic( S1 X3 ) be( S1 ) third( S2 ) to( X4 ) To( S2 X4 ) be( E1 ) Agent( E1 X2 ) Theme( E1 X3 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) be( E2 ) Agent( E2 X1 ) Theme( E2 X2 ) now( T1 ) Temp_included( E2 T3 ) Equ( T4 T1 ) IMP( DRS-0( NOT( DRS-0( Equ( X4 X2 ) ) ) ) DRS-0( Least( X2 X4 ) ) ) )
+---
+
+('Snt: ', ["what is the name of Justin Bieber's brother?\n"])
+DRS-0( DUP( DRS-0( thing( X1 ) ) DRS-0( name( X1 ) justin( X2 ) Equ( X2 X3 ) bieber( X2 ) Of( X3 X2 ) brother( X3 ) Of( X1 X3 ) be( E1 ) Agent( E1 X1 ) Theme( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) )
+---
+
+('Snt: ', ['What character did Natalie Portman play in star wars?\n'])
+DRS-0( character( X1 ) Topic( S1 X1 ) natalie( S1 ) portman( X1 ) Equ( X1 X2 ) play( E1 ) Agent( E1 X1 ) Patient( E1 X3 ) star( X3 ) war( X3 ) In( E1 X3 ) do( E2 ) Agent( E2 X1 ) Patient( E2 X1 ) now( T1 ) Temp_included( E2 T2 ) Temp_before( T2 T1 ) )
+---
+
+('Snt: ', ['Where did Donald Trump go to college?\n'])
+DRS-0( thing( X1 ) donald( E1 ) Equ( X2 X3 ) trump( E1 ) go( E2 ) Agent( E2 E1 ) college( X3 ) To( E2 X3 ) now( T1 ) Temp_included( E2 T2 ) Equ( T2 T1 ) )
+---
+
+('Snt: ', ['What countries around the world speak french?'])
+DRS-0( DUP( DRS-0( country( X1 ) ) DRS-0( world( X1 ) Around( E1 X1 ) french( X1 ) speak( E1 ) Agent( E1 X1 ) Patient( E1 X1 ) now( T1 ) Temp_included( E1 T2 ) Equ( T2 T1 ) ) ) )
+---
+

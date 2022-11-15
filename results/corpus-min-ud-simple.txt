@@ -1,0 +1,429 @@
+Cats are animals.
+
+	?a are animals
+		?a: Cats
+
+
+Animals have a head.
+
+	?a have ?b
+		?a: Animals
+		?b: a head
+
+
+Percy is a cat.
+
+	?a is a cat
+		?a: Percy
+
+
+Are cats animals?
+
+	Are ?a animals
+		?a: cats
+
+
+Does Percy have a head?
+
+	Does ?a have ?b
+		?a: Percy
+		?b: a head
+
+
+Plants are not animals.
+
+	?a are not animals
+		?a: Plants
+
+
+Iron conducts electricity.
+
+	?a conducts ?b
+		?a: Iron
+		?b: electricity
+
+
+Glass does not conduct electricity.
+
+	?a does not conduct ?b
+		?a: Glass
+		?b: electricity
+
+
+An electrical conductor is a vehicle for the flow of electricity.
+
+	?a is a vehicle for the flow of electricity
+		?a: An electrical conductor
+
+
+Conductor is a person who conducts an orchestra.
+
+	?a is a person
+		?a: Conductor
+	?a conducts ?b
+		?a: who
+		?b: an orchestra
+
+
+Steve is a conductor.
+
+	?a is a conductor
+		?a: Steve
+
+
+John ingested poison.
+
+	?a ingested ?b
+		?a: John
+		?b: poison
+
+
+John was born in 1990.
+
+	?a was born in 1990
+		?a: John
+
+
+Steve thinks John ingested poison.
+
+	?a thinks ?b ?c
+		?a: Steve
+		?b: John
+		?c: ingested poison
+
+
+Poison kills when eaten.
+
+	?a kills
+		?a: Poison
+
+
+Born in a small town, she took the midnight train going anywhere.
+
+	Born in a small town , ?a took ?b
+		?a: she
+		?b: the midnight train going anywhere
+
+
+The city councilmen refused the demonstrators a permit because they advocated violence.
+
+	?a refused ?b ?c
+		?a: The city councilmen
+		?b: the demonstrators
+		?c: a permit
+	?a advocated ?b
+		?a: they
+		?b: violence
+
+
+The trophy doesn't fit into the brown suitcase because it's too small.
+
+	?a does n't fit into the brown suitcase
+		?a: The trophy
+	?a 's too small
+		?a: it
+
+
+Joan made sure to thank Susan for all the help she had given.
+
+	?a made
+		?a: Joan
+	?a sure to thank ?b for all the help
+		?a: Joan
+		?b: Susan
+	?a had given
+		?a: she
+
+
+What states border Texas and have a major river?
+
+	have ?a
+		?a: a major river
+
+
+What is the total population of the states that border Texas?
+
+	?a is the total population of the states
+		?a: What
+	?a border ?b
+		?a: that
+		?b: Texas
+
+
+What states border states that border states that border states that border Texas.
+
+	?a states ?b
+		?a: What
+		?b: border
+	?a states ?b
+		?a: SOMETHING := What states border
+		?b: SOMETHING := border states that border states
+	?a states ?b
+		?a: border
+		?b: SOMETHING := that border states
+	?a states
+		?a: that border
+
+
+A laser is used for producing light.
+
+	?a is used for
+		?a: A laser
+	producing ?a
+		?a: light
+
+
+A leaf absorbs sunlight to perform photosynthesis.
+
+	?a absorbs ?b
+		?a: A leaf
+		?b: sunlight
+	?a to perform ?b
+		?a: A leaf
+		?b: photosynthesis
+
+
+A flashlight converts chemical energy into light energy.
+
+	?a converts ?b into light energy
+		?a: A flashlight
+		?b: chemical energy
+
+
+A flashlight emits light.
+
+	?a emits ?b
+		?a: A flashlight
+		?b: light
+
+
+A flashlight requires a source of electricity to produce light.
+
+	?a requires ?b to produce ?c
+		?a: A flashlight
+		?b: a source of electricity
+		?c: light
+
+
+A light bulb converts electrical energy into light energy when it is turned on.
+
+	?a converts ?b into light energy
+		?a: A light bulb
+		?b: electrical energy
+	when ?a is turned on
+		?a: it
+
+
+A light bulb requires electrical energy to produce light.
+
+	?a requires ?b to produce ?c
+		?a: A light bulb
+		?b: electrical energy
+		?c: light
+
+
+A mirror is used for reflecting light.
+
+	?a is used for
+		?a: A mirror
+	reflecting ?a
+		?a: light
+
+
+A mirror reflects light.
+
+	?a reflects ?b
+		?a: A mirror
+		?b: light
+
+
+A plant light is used for help plants by mimicking sunlight.
+
+	?a is used for help ?b by
+		?a: A plant light
+		?b: plants
+	mimicking ?a
+		?a: sunlight
+
+
+A plant requires sunlight for photosynthesis.
+
+	?a requires ?b
+		?a: A plant
+		?b: sunlight for photosynthesis
+
+
+A plant requires sunlight to grow.
+
+	?a requires ?b to grow
+		?a: A plant
+		?b: sunlight
+
+
+A prism refracts light.
+
+	?a refracts ?b
+		?a: A prism
+		?b: light
+
+
+A rainbow is formed by refraction of light by splitting light into all different colors.
+
+	?a is formed by refraction of light by splitting light into all different colors
+		?a: A rainbow
+
+
+A reflector is used to reflect light especially on vehicles.
+
+	?a is used to reflect ?b
+		?a: A reflector
+		?b: light especially on vehicles
+
+
+A star is a source of light energy through nuclear reactions.
+
+	?a is a source of light energy through nuclear reactions
+		?a: A star
+
+
+A star is a source of light through nuclear reactions.
+
+	?a is a source of light through nuclear reactions
+		?a: A star
+
+
+A solar panel converts sunlight into electricity.
+
+	?a converts ?b into electricity
+		?a: A solar panel
+		?b: sunlight
+
+
+A white object reflects all visible light.
+
+	?a reflects ?b
+		?a: A white object
+		?b: all visible light
+
+
+Absorbing sunlight causes objects to heat.
+
+	?a causes ?b to heat
+		?a: Absorbing sunlight
+		?b: objects
+
+
+A candle is a source of light when it is burned.
+
+	?a is a source of light
+		?a: A candle
+	when ?a is burned
+		?a: it
+
+
+A desert environment usually has a lot of sunlight.
+
+	?a usually has ?b
+		?a: A desert environment
+		?b: a lot of sunlight
+
+
+A revolution is when something revolves around something else.
+
+	?a is
+		?a: A revolution
+	when ?a revolves around something else
+		?a: something
+
+
+A complete revolution of the Earth around the sun takes one Earth year.
+
+	?a takes ?b Earth year
+		?a: A complete revolution of the Earth around the sun
+		?b: one
+
+
+A complete revolution of the Earth around the sun takes one solar year.
+
+	?a takes ?b solar year
+		?a: A complete revolution of the Earth around the sun
+		?b: one
+
+
+A revolution is when something revolves around something else.
+
+	?a is
+		?a: A revolution
+	when ?a revolves around something else
+		?a: something
+
+
+A revolution of the moon around the Earth takes 1 month.
+
+	?a takes 1 month
+		?a: A revolution of the moon around the Earth
+
+
+A planet is exposed to the heat of the star around which it revolves.
+
+	?a is exposed to the heat of the star
+		?a: A planet
+	around which ?a revolves
+		?a: it
+
+
+A satellite orbits a planet.
+
+	?a orbits ?b
+		?a: A satellite
+		?b: a planet
+
+
+Pluto is the planet that is ninth closest to the Sun.
+
+	?a is the planet
+		?a: Pluto
+	?a is ninth closest to the Sun
+		?a: that
+
+
+A planet rotating causes cycles of day and night on that planet.
+
+	?a causes ?b
+		?a: A planet rotating
+		?b: cycles of day and night on that planet
+
+
+Earth is the planet that is third closest to the Sun.
+
+	?a is the planet
+		?a: Earth
+	?a is third closest to the Sun
+		?a: that
+
+
+what is the name of Justin Bieber's brother?
+
+	what is ?a
+		?a: the name of Justin Bieber 's brother
+
+
+What character did Natalie Portman play in star wars?
+
+	?a did ?b play in star wars
+		?a: What character
+		?b: Natalie Portman
+
+
+Where did Donald Trump go to college?
+
+	Where did ?a go to college
+		?a: Donald Trump
+
+
+What countries around the world speak french?
+	?a ?b speak french
+		?a: What
+		?b: countries around the world
+
+

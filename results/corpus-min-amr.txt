@@ -1,0 +1,558 @@
+# ::snt Cats are animals.
+
+(a / animal
+      :domain (c / cat))
+
+# ::snt Animals have a head.
+
+(h / have-03
+      :ARG0 (a / animal)
+      :ARG1 (h2 / head))
+
+# ::snt Percy is a cat.
+
+(c / cat
+      :domain (p / person
+            :name (n / name
+                  :op1 "Percy")))
+
+# ::snt Are cats animals?
+
+(a / animal
+      :polarity (a2 / amr-unknown)
+      :domain (c / cat))
+
+# ::snt Does Percy have a head?
+
+(h / have-03
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Percy"))
+      :ARG1 (h2 / head))
+
+# ::snt Plants are not animals.
+
+(a / animal
+      :polarity -
+      :domain (p / plant))
+
+# ::snt Iron conducts electricity.
+
+(c / conduct-01
+      :ARG0 (ii / iron)
+      :ARG1 (e / electricity))
+
+# ::snt Glass does not conduct electricity.
+
+(c / conduct-01
+      :polarity -
+      :ARG0 (g / glass)
+      :ARG1 (e / electricity))
+
+# ::snt An electrical conductor is a vehicle for the flow of electricity.
+
+(v / vehicle
+      :purpose (f / flow-01
+            :ARG1 (e / electricity))
+      :domain (c / conductor
+            :mod (e2 / electricity)))
+
+# ::snt Conductor is a person who conducts an orchestra.
+
+(p / person
+      :ARG0-of (c / conduct-01)
+      :domain (p2 / person
+            :ARG0-of (c2 / conduct-01
+                  :ARG1 (o / orchestra))))
+
+# ::snt Steve is a conductor.
+
+(c / conduct-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Steve")))
+
+# ::snt John ingested poison.
+
+(ii / ingest-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "John"))
+      :ARG1 (p2 / poison))
+
+# ::snt John was born in 1990.
+
+(b / bear-02
+      :ARG1 (p / person
+            :name (n / name
+                  :op1 "John"))
+      :time (d / date-entity
+            :year 1990))
+
+# ::snt Steve thinks John ingested poison.
+
+(t / think-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Steve"))
+      :ARG1 (ii / ingest-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "John"))
+            :ARG1 (p3 / poison)))
+
+# ::snt Poison kills when eaten.
+
+(k / kill-01
+      :ARG0 (p / poison)
+      :time (e / eat-01
+            :ARG1 p))
+
+# ::snt Born in a small town, she took the midnight train going anywhere.
+
+(a / and
+      :op1 (b / bear-02
+            :ARG1 (s / she)
+            :location (t / town
+                  :mod (s2 / small)))
+      :op2 (t2 / take-01
+            :ARG0 s
+            :ARG1 (t3 / train
+                  :time (d / date-entity
+                        :dayperiod (m / midnight)))
+            :purpose (g / go-02
+                  :ARG0 s
+                  :ARG4 (a2 / anywhere))))
+
+# ::snt The city councilmen refused the demonstrators a permit because they advocated violence.
+
+(r / refuse-01
+      :ARG0 (c / councilman
+            :mod (c2 / city))
+      :ARG1 (p / permit-01)
+      :ARG2 (p2 / person
+            :ARG0-of (d / demonstrate-01))
+      :ARG1-of (c3 / cause-01
+            :ARG0 (a / advocate-01
+                  :ARG0 c
+                  :ARG1 (v / violence))))
+
+# ::snt The trophy doesn't fit into the brown suitcase because it's too small.
+
+(f / fit-01
+      :polarity -
+      :ARG1 (t / trophy)
+      :ARG2 (s / suitcase
+            :ARG1-of (b / brown-02))
+      :ARG1-of (c / cause-01
+            :ARG0 (h / have-degree-91
+                  :ARG1 t
+                  :ARG2 (s2 / small)
+                  :ARG3 (t2 / too))))
+
+# ::snt Joan made sure to thank Susan for all the help she had given.
+
+(e / ensure-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Joan"))
+      :ARG1 (t / thank-01
+            :ARG0 p
+            :ARG1 (p2 / person
+                  :name (n2 / name
+                        :op1 "Susan"))
+            :ARG2 (h / help-01
+                  :ARG0 p2
+                  :mod (a / all)
+                  :ARG1-of (g / give-01
+                        :ARG0 p2))))
+
+# ::snt What states border Texas and have a major river?
+
+(a / and
+      :op1 (b / border-01
+            :ARG1 (s / state
+                  :mod (a2 / amr-unknown))
+            :ARG2 (s2 / state
+                  :name (n / name
+                        :op1 "Texas")))
+      :op2 (h / have-03
+            :ARG0 s
+            :ARG1 (r / river
+                  :ARG1-of (m / major-02))))
+
+# ::snt What is the total population of the states that border Texas?
+
+(p / population
+      :ARG1-of (t / total-01)
+      :poss (s / state
+            :ARG0-of (b / border-01
+                  :ARG1 (s2 / state
+                        :name (n / name
+                              :op1 "Texas"))))
+      :domain (a / amr-unknown))
+
+# ::snt What states border states that border states that border states that border Texas.
+
+(s / state
+      :mod (b / border)
+      :mod (a / amr-unknown)
+      :mod (s2 / state
+            :mod (b2 / border))
+      :mod (s3 / state
+            :mod b2)
+      :mod (b3 / border)
+      :mod (s4 / state
+            :name (n / name
+                  :op1 "Texas")))
+
+# ::snt A laser is used for producing light.
+
+(u / use-01
+      :ARG1 (l / laser)
+      :ARG2 (p / produce-01
+            :ARG1 (l2 / light)))
+
+# ::snt A leaf absorbs sunlight to perform photosynthesis.
+
+(a / absorb-01
+      :ARG0 (l / leaf)
+      :ARG1 (s / sunlight)
+      :purpose (p / perform-02
+            :ARG0 l
+            :ARG1 (p2 / photosynthesis)))
+
+# ::snt A flashlight converts chemical energy into light energy.
+
+(c / convert-01
+      :ARG0 (f / flashlight)
+      :ARG1 (e / energy
+            :mod (c2 / chemical))
+      :ARG2 (e2 / energy
+            :mod (l / light)))
+
+# ::snt A flashlight emits light.
+
+(e / emit-01
+      :ARG0 (f / flashlight)
+      :ARG1 (l / light))
+
+# ::snt A flashlight requires a source of electricity to produce light.
+
+(r / require-01
+      :ARG0 (f / flashlight)
+      :ARG1 (s / source
+            :source-of (e / electricity))
+      :purpose (p / produce-01
+            :ARG0 f
+            :ARG1 (l / light)))
+
+# ::snt A light bulb converts electrical energy into light energy when it is turned on.
+
+(c / convert-01
+      :ARG0 (b / bulb
+            :ARG0-of (l / light-01))
+      :ARG1 (e / energy
+            :mod (e2 / electrical))
+      :ARG2 (e3 / energy
+            :mod (l2 / light-01))
+      :time (t / turn-on-08
+            :ARG1 b))
+
+# ::snt A light bulb requires electrical energy to produce light.
+
+(r / require-01
+      :ARG0 (b / bulb
+            :ARG0-of (l / light-01))
+      :ARG1 (e / energy
+            :mod (e2 / electrical))
+      :purpose (p / produce-01
+            :ARG0 b
+            :ARG1 (l2 / light-01)))
+
+# ::snt A mirror is used for reflecting light.
+
+(u / use-01
+      :ARG1 (m / mirror)
+      :ARG2 (r / reflect-01
+            :ARG1 (l / light)))
+
+# ::snt A mirror reflects light.
+
+(r / reflect-01
+      :ARG0 (m / mirror)
+      :ARG1 (l / light))
+
+# ::snt A plant light is used for help plants by mimicking sunlight.
+
+(u / use-01
+      :ARG1 (l / light
+            :mod (p / plant))
+      :ARG2 (h / help-01
+            :ARG0 l
+            :ARG1 (p2 / plant)
+            :manner (m / mimic-01
+                  :ARG0 l
+                  :ARG1 (s / sunlight))))
+
+# ::snt A plant requires sunlight for photosynthesis.
+
+(r / require-01
+      :ARG0 (p / plant)
+      :ARG1 (s / sunlight)
+      :purpose (p2 / photosynthesis))
+
+# ::snt A plant requires sunlight to grow.
+
+(r / require-01
+      :ARG0 (p / plant)
+      :ARG1 (s / sunlight)
+      :purpose (g / grow-01
+            :ARG1 p))
+
+# ::snt A prism refracts light.
+
+(r / refract-01
+      :ARG0 (p / prism)
+      :ARG1 (l / light))
+
+# ::snt A rainbow is formed by refraction of light by splitting light into all different colors.
+
+(f / form-01
+      :ARG0 (r / refraction-00
+            :ARG1 (l / light)
+            :manner (s / split-01
+                  :ARG1 (l2 / light)
+                  :ARG2 (c / color
+                        :ARG1-of (d / differ-02)
+                        :mod (a / all))))
+      :ARG1 (r2 / rainbow))
+
+# ::snt A reflector is used to reflect light especially on vehicles.
+
+(u / use-01
+      :ARG1 (t / thing
+            :ARG0-of (r / reflect-01))
+      :ARG2 (r2 / reflect-01
+            :ARG1 (l / light)
+            :ARG2 (v / vehicle)
+            :mod (e / especially)))
+
+# ::snt A star is a source of light energy through nuclear reactions.
+
+(s / source-02
+      :ARG0 (s2 / star)
+      :ARG1 (e / energy
+            :mod (l / light))
+      :manner (r / react-01
+            :mod (n / nucleus)))
+
+# ::snt A star is a source of light through nuclear reactions.
+
+(s / source-02
+      :ARG0 (s2 / star)
+      :ARG1 (l / light)
+      :manner (r / react-01
+            :mod (n / nucleus)))
+
+# ::snt A solar panel converts sunlight into electricity.
+
+(c / convert-01
+      :ARG0 (p / panel
+            :mod (s / sun))
+      :ARG1 (s2 / sunlight)
+      :ARG2 (e / electricity))
+
+# ::snt A white object reflects all visible light.
+
+(r / reflect-01
+      :ARG0 (o / object
+            :ARG1-of (w / white-02))
+      :ARG1 (l / light
+            :ARG1-of (s / see-01)
+            :mod (a / all)))
+
+# ::snt Absorbing sunlight causes objects to heat.
+
+(c / cause-01
+      :ARG0 (a / absorb-01
+            :ARG1 (s / sunlight))
+      :ARG1 (h / heat-01
+            :ARG1 (o / object)))
+
+# ::snt A candle is a source of light when it is burned.
+
+(s / source-02
+      :ARG0 (c / candle)
+      :ARG1 (l / light)
+      :time (b / burn-01
+            :ARG1 c))
+
+# ::snt A desert environment usually has a lot of sunlight.
+
+(h / have-03
+      :ARG0 (e / environment
+            :mod (d / desert))
+      :ARG1 (s / sunlight
+            :quant (l / lot))
+      :mod (u / usual))
+
+# ::snt A revolution is when something revolves around something else.
+
+(r / revolution-03
+      :time (r2 / revolve-01
+            :ARG1 (s / something)
+            :ARG2 (s2 / something
+                  :mod (e / else))))
+
+# ::snt A complete revolution of the Earth around the sun takes one Earth year.
+
+(t / take-10
+      :ARG0 (r / revolution-03
+            :ARG1 (p / planet
+                  :name (n / name
+                        :op1 "Earth"))
+            :ARG1-of (c / complete-02)
+            :location (a / around
+                  :op1 (s / sun)))
+      :ARG1 (t2 / temporal-quantity
+            :quant 1
+            :unit (y / year)
+            :mod p))
+
+# ::snt A complete revolution of the Earth around the sun takes one solar year.
+
+(t / take-10
+      :ARG0 (r / revolution-03
+            :ARG1 (p / planet
+                  :name (n / name
+                        :op1 "Earth"))
+            :ARG1-of (c / complete-02)
+            :location (a / around
+                  :op1 (s / sun)))
+      :ARG1 (t2 / temporal-quantity
+            :quant 1
+            :unit (y / year
+                  :mod (s2 / solar))))
+
+# ::snt A revolution is when something revolves around something else.
+
+(r / revolution-03
+      :time (r2 / revolve-01
+            :ARG1 (s / something)
+            :ARG2 (s2 / something
+                  :mod (e / else))))
+
+# ::snt A revolution of the moon around the Earth takes 1 month.
+
+(t / take-10
+      :ARG0 (r / revolution-03
+            :ARG1 (m / moon)
+            :location (a / around
+                  :op1 (p / planet
+                        :name (n / name
+                              :op1 "Earth"))))
+      :ARG1 (t2 / temporal-quantity
+            :quant 1
+            :unit (m2 / month)))
+
+# ::snt A planet is exposed to the heat of the star around which it revolves.
+
+(e / expose-01
+      :ARG1 (p / planet)
+      :ARG2 (h / heat
+            :poss (s / star
+                  :ARG0-of (r / revolve-01
+                        :ARG1 p))))
+
+# ::snt A satellite orbits a planet.
+
+(o / orbit-01
+      :ARG0 (s / satellite)
+      :ARG1 (p / planet))
+
+# ::snt Pluto is the planet that is ninth closest to the Sun.
+
+(p / planet
+      :domain (p2 / planet
+            :name (n / name
+                  :op1 "Pluto"))
+      :ARG1-of (h / have-degree-91
+            :ARG2 (c / close-10
+                  :ARG1 p2
+                  :ARG2 (s / sun))
+            :ARG3 (m / most
+                  :ord (o / ordinal-entity
+                        :value 9))))
+
+# ::snt A planet rotating causes cycles of day and night on that planet.
+
+(c / cause-01
+      :ARG0 (r / rotate-01
+            :ARG1 (p / planet))
+      :ARG1 (c2 / cycle-01
+            :ARG1 (a / and
+                  :op1 (d / day)
+                  :op2 (n / night))
+            :location p))
+
+# ::snt Earth is the planet that is third closest to the Sun.
+
+(p / planet
+      :ARG1-of (h / have-degree-91
+            :ARG2 (c / close-10
+                  :ARG1 p
+                  :ARG2 (s / sun))
+            :ARG3 (m / most
+                  :ord (o / ordinal-entity
+                        :value 3)))
+      :domain (p2 / planet
+            :name (n / name
+                  :op1 "Earth")))
+
+# ::snt what is the name of Justin Bieber's brother?
+
+(n / name-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person
+                        :name (n2 / name
+                              :op1 "Justin"
+                              :op2 "Bieber"))
+                  :ARG2 (b / brother)))
+      :ARG2 (a / amr-unknown))
+
+# ::snt What character did Natalie Portman play in star wars?
+
+(p / play-02
+      :ARG0 (p2 / person
+            :name (n / name
+                  :op1 "Natalie"
+                  :op2 "Portman"))
+      :ARG1 (c / character
+            :mod (a / amr-unknown))
+      :time (w / war
+            :name (n2 / name
+                  :op1 "Star"
+                  :op2 "Wars")))
+
+# ::snt Where did Donald Trump go to college?
+
+(g / go-02
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Donald"
+                  :op2 "Trump"))
+      :ARG4 (c / college)
+      :location (a / amr-unknown))
+
+# ::snt What countries around the world speak french?
+(s / speak-01
+      :ARG0 (a / amr-unknown
+            :location (a2 / around
+                  :op1 (w / world)))
+      :ARG1 (l / language
+            :name (n / name
+                  :op1 "French")))
+

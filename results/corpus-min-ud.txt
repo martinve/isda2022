@@ -1,0 +1,429 @@
+Cats are animals.
+
+	?a are animals	[animals-root,add_root(animals/2)_for_nsubj_from_(Cats/0),n1,n1,n2,u]
+		?a: Cats	[Cats-nsubj,g1(nsubj)]
+
+
+Animals have a head.
+
+	?a have ?b	[have-root,add_root(have/1)_for_dobj_from_(head/3),add_root(have/1)_for_nsubj_from_(Animals/0),n1,n2,n2,u]
+		?a: Animals	[Animals-nsubj,g1(nsubj)]
+		?b: a head	[head-dobj,clean_arg_token(a/2),g1(dobj)]
+
+
+Percy is a cat.
+
+	?a is a cat	[cat-root,add_root(cat/3)_for_nsubj_from_(Percy/0),n1,n1,n1,n2,u]
+		?a: Percy	[Percy-nsubj,g1(nsubj)]
+
+
+Are cats animals?
+
+	Are ?a animals	[animals-root,add_root(animals/2)_for_nsubj_from_(cats/1),n1,n1,n2,u]
+		?a: cats	[cats-nsubj,g1(nsubj)]
+
+
+Does Percy have a head?
+
+	Does ?a have ?b	[have-root,add_root(have/2)_for_dobj_from_(head/4),add_root(have/2)_for_nsubj_from_(Percy/1),n1,n1,n2,n2,u]
+		?a: Percy	[Percy-nsubj,g1(nsubj)]
+		?b: a head	[head-dobj,clean_arg_token(a/3),g1(dobj)]
+
+
+Plants are not animals.
+
+	?a are not animals	[animals-root,add_root(animals/3)_for_nsubj_from_(Plants/0),n1,n1,n1,n2,u]
+		?a: Plants	[Plants-nsubj,g1(nsubj)]
+
+
+Iron conducts electricity.
+
+	?a conducts ?b	[conducts-root,add_root(conducts/1)_for_dobj_from_(electricity/2),add_root(conducts/1)_for_nsubj_from_(Iron/0),n1,n2,n2,u]
+		?a: Iron	[Iron-nsubj,g1(nsubj)]
+		?b: electricity	[electricity-dobj,g1(dobj)]
+
+
+Glass does not conduct electricity.
+
+	?a does not conduct ?b	[conduct-root,add_root(conduct/3)_for_dobj_from_(electricity/4),add_root(conduct/3)_for_nsubj_from_(Glass/0),n1,n1,n1,n2,n2,u]
+		?a: Glass	[Glass-nsubj,g1(nsubj)]
+		?b: electricity	[electricity-dobj,g1(dobj)]
+
+
+An electrical conductor is a vehicle for the flow of electricity.
+
+	?a is a vehicle for the flow of electricity	[vehicle-root,add_root(vehicle/5)_for_nsubj_from_(conductor/2),n1,n1,n1,n1,n1,n1,n1,n1,n2,u]
+		?a: An electrical conductor	[conductor-nsubj,clean_arg_token(An/0),clean_arg_token(electrical/1),g1(nsubj)]
+
+
+Conductor is a person who conducts an orchestra.
+
+	?a is a person	[person-root,add_root(person/3)_for_nsubj_from_(Conductor/0),n1,n1,n1,n2,n3,u]
+		?a: Conductor	[Conductor-nsubj,g1(nsubj)]
+	?a conducts ?b	[conducts-rcmod,add_root(conducts/5)_for_dobj_from_(orchestra/7),add_root(conducts/5)_for_nsubj_from_(who/4),n2,n2]
+		?a: who	[who-nsubj,g1(nsubj)]
+		?b: an orchestra	[orchestra-dobj,clean_arg_token(an/6),g1(dobj)]
+
+
+Steve is a conductor.
+
+	?a is a conductor	[conductor-root,add_root(conductor/3)_for_nsubj_from_(Steve/0),n1,n1,n1,n2,u]
+		?a: Steve	[Steve-nsubj,g1(nsubj)]
+
+
+John ingested poison.
+
+	?a ingested ?b	[ingested-root,add_root(ingested/1)_for_dobj_from_(poison/2),add_root(ingested/1)_for_nsubj_from_(John/0),n1,n2,n2,u]
+		?a: John	[John-nsubj,g1(nsubj)]
+		?b: poison	[poison-dobj,g1(dobj)]
+
+
+John was born in 1990.
+
+	?a was born in 1990	[born-root,add_root(born/2)_for_nsubjpass_from_(John/0),n1,n1,n1,n1,n2,u]
+		?a: John	[John-nsubjpass,g1(nsubjpass)]
+
+
+Steve thinks John ingested poison.
+
+	?a thinks ?b ?c	[thinks-root,add_root(thinks/1)_for_dobj_from_(poison/4),add_root(thinks/1)_for_iobj_from_(John/2),add_root(thinks/1)_for_nsubj_from_(Steve/0),n1,n2,n2,n2,u]
+		?a: Steve	[Steve-nsubj,g1(nsubj)]
+		?b: John	[John-iobj,g1(iobj)]
+		?c: ingested poison	[poison-dobj,clean_arg_token(ingested/3),g1(dobj)]
+
+
+Poison kills when eaten.
+
+	?a kills	[kills-root,add_root(kills/1)_for_advcl_from_(eaten/3),add_root(kills/1)_for_nsubj_from_(Poison/0),n1,n2,n4,u]
+		?a: Poison	[Poison-nsubj,g1(nsubj)]
+
+
+Born in a small town, she took the midnight train going anywhere.
+
+	Born in a small town , ?a took ?b	[took-root,add_root(took/7)_for_dobj_from_(train/10),add_root(took/7)_for_nsubj_from_(she/6),n1,n1,n1,n1,n1,n1,n1,n2,n2,u]
+		?a: she	[she-nsubj,g1(nsubj)]
+		?b: the midnight train going anywhere	[train-dobj,clean_arg_token(anywhere/12),clean_arg_token(going/11),clean_arg_token(midnight/9),clean_arg_token(the/8),g1(dobj)]
+
+
+The city councilmen refused the demonstrators a permit because they advocated violence.
+
+	?a refused ?b ?c	[refused-root,add_root(refused/3)_for_advcl_from_(advocated/10),add_root(refused/3)_for_dobj_from_(permit/7),add_root(refused/3)_for_iobj_from_(demonstrators/5),add_root(refused/3)_for_nsubj_from_(councilmen/2),n1,n2,n2,n2,n3,u]
+		?a: The city councilmen	[councilmen-nsubj,clean_arg_token(The/0),clean_arg_token(city/1),g1(nsubj)]
+		?b: the demonstrators	[demonstrators-iobj,clean_arg_token(the/4),g1(iobj)]
+		?c: a permit	[permit-dobj,clean_arg_token(a/6),g1(dobj)]
+	?a advocated ?b	[advocated-advcl,add_root(advocated/10)_for_dobj_from_(violence/11),add_root(advocated/10)_for_nsubj_from_(they/9),n1,n2,n2,u]
+		?a: they	[they-nsubj,g1(nsubj)]
+		?b: violence	[violence-dobj,g1(dobj)]
+
+
+The trophy doesn't fit into the brown suitcase because it's too small.
+
+	?a does n't fit into the brown suitcase	[fit-root,add_root(fit/4)_for_advcl_from_(small/13),add_root(fit/4)_for_nsubj_from_(trophy/1),n1,n1,n1,n1,n1,n1,n1,n2,n3,u]
+		?a: The trophy	[trophy-nsubj,clean_arg_token(The/0),g1(nsubj)]
+	?a 's too small	[small-advcl,add_root(small/13)_for_nsubj_from_(it/10),n1,n1,n1,n2,u]
+		?a: it	[it-nsubj,g1(nsubj)]
+
+
+Joan made sure to thank Susan for all the help she had given.
+
+	?a made	[made-root,add_root(made/1)_for_nsubj_from_(Joan/0),n1,n2,n3,u]
+		?a: Joan	[Joan-nsubj,g1(nsubj)]
+	?a sure to thank ?b for all the help	[sure-acomp,add_root(sure/2)_for_xcomp_from_(thank/4),l,n1,n1,n1,n1,n1,n1,n2,n3]
+		?a: Joan	[Joan-nsubj,borrow_subj(Joan/0)_from(made/1),g1(nsubj)]
+		?b: Susan	[Susan-dobj,g1(dobj),l]
+	?a had given	[given-rcmod,add_root(given/12)_for_nsubj_from_(she/10),n1,n2]
+		?a: she	[she-nsubj,g1(nsubj)]
+
+
+What states border Texas and have a major river?
+
+	have ?a	[have-conj,add_root(have/5)_for_dobj_from_(river/8),n2]
+		?a: a major river	[river-dobj,clean_arg_token(a/6),clean_arg_token(major/7),g1(dobj)]
+
+
+What is the total population of the states that border Texas?
+
+	?a is the total population of the states	[population-root,add_root(population/4)_for_nsubj_from_(What/0),n1,n1,n1,n1,n1,n1,n1,n2,n3,u]
+		?a: What	[What-nsubj,g1(nsubj)]
+	?a border ?b	[border-rcmod,add_root(border/9)_for_dobj_from_(Texas/10),add_root(border/9)_for_nsubj_from_(that/8),n2,n2]
+		?a: that	[that-nsubj,g1(nsubj)]
+		?b: Texas	[Texas-dobj,g1(dobj)]
+
+
+What states border states that border states that border states that border Texas.
+
+	?a states ?b	[states-csubj,a1,add_root(states/1)_for_dobj_from_(border/2),add_root(states/1)_for_nsubj_from_(What/0),n2,n2]
+		?a: What	[What-nsubj,g1(nsubj)]
+		?b: border	[border-dobj,g1(dobj)]
+	?a states ?b	[states-root,add_root(states/3)_for_ccomp_from_(states/6),add_root(states/3)_for_csubj_from_(states/1),n1,n2,n2,u]
+		?a: SOMETHING := What states border	[states-csubj,clean_arg_token(What/0),clean_arg_token(border/2),k]
+		?b: SOMETHING := border states that border states	[states-ccomp,clean_arg_token(border/5),clean_arg_token(border/8),clean_arg_token(states/9),clean_arg_token(that/4),clean_arg_token(that/7),drop_unknown(Texas/12),k,u]
+	?a states ?b	[states-ccomp,a1,add_root(states/6)_for_ccomp_from_(states/9),add_root(states/6)_for_nsubj_from_(border/5),n1,n2,n2,u]
+		?a: border	[border-nsubj,g1(nsubj)]
+		?b: SOMETHING := that border states	[states-ccomp,clean_arg_token(border/8),clean_arg_token(that/7),drop_unknown(Texas/12),k]
+	?a states	[states-ccomp,a1,add_root(states/9)_for_nsubj_from_(border/8),n2,n4]
+		?a: that border	[border-nsubj,clean_arg_token(that/7),g1(nsubj)]
+
+
+A laser is used for producing light.
+
+	?a is used for	[used-root,add_root(used/3)_for_nsubjpass_from_(laser/1),n1,n1,n1,n2,n3,u]
+		?a: A laser	[laser-nsubjpass,clean_arg_token(A/0),g1(nsubjpass)]
+	producing ?a	[producing-pcomp,add_root(producing/5)_for_dobj_from_(light/6),n2]
+		?a: light	[light-dobj,g1(dobj)]
+
+
+A leaf absorbs sunlight to perform photosynthesis.
+
+	?a absorbs ?b	[absorbs-root,add_root(absorbs/2)_for_dobj_from_(sunlight/3),add_root(absorbs/2)_for_nsubj_from_(leaf/1),n1,n2,n2,n3,u]
+		?a: A leaf	[leaf-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: sunlight	[sunlight-dobj,g1(dobj)]
+	?a to perform ?b	[perform-vmod,add_root(perform/5)_for_dobj_from_(photosynthesis/6),n1,n2]
+		?a: A leaf	[leaf-nsubj,borrow_subj(leaf/1)_from(absorbs/2),g1(nsubj)]
+		?b: photosynthesis	[photosynthesis-dobj,g1(dobj)]
+
+
+A flashlight converts chemical energy into light energy.
+
+	?a converts ?b into light energy	[converts-root,add_root(converts/2)_for_dobj_from_(energy/4),add_root(converts/2)_for_nsubj_from_(flashlight/1),n1,n1,n1,n1,n2,n2,u]
+		?a: A flashlight	[flashlight-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: chemical energy	[energy-dobj,clean_arg_token(chemical/3),g1(dobj)]
+
+
+A flashlight emits light.
+
+	?a emits ?b	[emits-root,add_root(emits/2)_for_dobj_from_(light/3),add_root(emits/2)_for_nsubj_from_(flashlight/1),n1,n2,n2,u]
+		?a: A flashlight	[flashlight-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: light	[light-dobj,g1(dobj)]
+
+
+A flashlight requires a source of electricity to produce light.
+
+	?a requires ?b to produce ?c	[requires-root,add_root(requires/2)_for_dobj_from_(source/4),add_root(requires/2)_for_nsubj_from_(flashlight/1),add_root(requires/2)_for_xcomp_from_(produce/8),l,n1,n1,n1,n2,n2,n2,u]
+		?a: A flashlight	[flashlight-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: a source of electricity	[source-dobj,clean_arg_token(a/3),clean_arg_token(electricity/6),clean_arg_token(of/5),g1(dobj)]
+		?c: light	[light-dobj,g1(dobj),l]
+
+
+A light bulb converts electrical energy into light energy when it is turned on.
+
+	?a converts ?b into light energy	[converts-root,add_root(converts/3)_for_advcl_from_(turned/12),add_root(converts/3)_for_dobj_from_(energy/5),add_root(converts/3)_for_nsubj_from_(bulb/2),n1,n1,n1,n1,n2,n2,n3,u]
+		?a: A light bulb	[bulb-nsubj,clean_arg_token(A/0),clean_arg_token(light/1),g1(nsubj)]
+		?b: electrical energy	[energy-dobj,clean_arg_token(electrical/4),g1(dobj)]
+	when ?a is turned on	[turned-advcl,add_root(turned/12)_for_nsubjpass_from_(it/10),n1,n1,n1,n2]
+		?a: it	[it-nsubjpass,g1(nsubjpass)]
+
+
+A light bulb requires electrical energy to produce light.
+
+	?a requires ?b to produce ?c	[requires-root,add_root(requires/3)_for_dobj_from_(energy/5),add_root(requires/3)_for_nsubj_from_(bulb/2),add_root(requires/3)_for_xcomp_from_(produce/7),l,n1,n1,n1,n2,n2,n2,u]
+		?a: A light bulb	[bulb-nsubj,clean_arg_token(A/0),clean_arg_token(light/1),g1(nsubj)]
+		?b: electrical energy	[energy-dobj,clean_arg_token(electrical/4),g1(dobj)]
+		?c: light	[light-dobj,g1(dobj),l]
+
+
+A mirror is used for reflecting light.
+
+	?a is used for	[used-root,add_root(used/3)_for_nsubjpass_from_(mirror/1),n1,n1,n1,n2,n3,u]
+		?a: A mirror	[mirror-nsubjpass,clean_arg_token(A/0),g1(nsubjpass)]
+	reflecting ?a	[reflecting-pcomp,add_root(reflecting/5)_for_dobj_from_(light/6),n2]
+		?a: light	[light-dobj,g1(dobj)]
+
+
+A mirror reflects light.
+
+	?a reflects ?b	[reflects-root,add_root(reflects/2)_for_dobj_from_(light/3),add_root(reflects/2)_for_nsubj_from_(mirror/1),n1,n2,n2,u]
+		?a: A mirror	[mirror-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: light	[light-dobj,g1(dobj)]
+
+
+A plant light is used for help plants by mimicking sunlight.
+
+	?a is used for help ?b by	[used-root,add_root(used/4)_for_dobj_from_(plants/7),add_root(used/4)_for_nsubjpass_from_(light/2),n1,n1,n1,n1,n1,n2,n2,n3,u]
+		?a: A plant light	[light-nsubjpass,clean_arg_token(A/0),clean_arg_token(plant/1),g1(nsubjpass)]
+		?b: plants	[plants-dobj,g1(dobj)]
+	mimicking ?a	[mimicking-pcomp,add_root(mimicking/9)_for_dobj_from_(sunlight/10),n2]
+		?a: sunlight	[sunlight-dobj,g1(dobj)]
+
+
+A plant requires sunlight for photosynthesis.
+
+	?a requires ?b	[requires-root,add_root(requires/2)_for_dobj_from_(sunlight/3),add_root(requires/2)_for_nsubj_from_(plant/1),n1,n2,n2,u]
+		?a: A plant	[plant-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: sunlight for photosynthesis	[sunlight-dobj,clean_arg_token(for/4),clean_arg_token(photosynthesis/5),g1(dobj)]
+
+
+A plant requires sunlight to grow.
+
+	?a requires ?b to grow	[requires-root,add_root(requires/2)_for_dobj_from_(sunlight/3),add_root(requires/2)_for_nsubj_from_(plant/1),add_root(requires/2)_for_xcomp_from_(grow/5),l,n1,n1,n1,n2,n2,u]
+		?a: A plant	[plant-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: sunlight	[sunlight-dobj,g1(dobj)]
+
+
+A prism refracts light.
+
+	?a refracts ?b	[refracts-root,add_root(refracts/2)_for_dobj_from_(light/3),add_root(refracts/2)_for_nsubj_from_(prism/1),n1,n2,n2,u]
+		?a: A prism	[prism-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: light	[light-dobj,g1(dobj)]
+
+
+A rainbow is formed by refraction of light by splitting light into all different colors.
+
+	?a is formed by refraction of light by splitting light into all different colors	[formed-root,add_root(formed/3)_for_nsubjpass_from_(rainbow/1),n1,n1,n1,n1,n1,n1,n1,n1,n1,n1,n1,n1,n1,n2,u]
+		?a: A rainbow	[rainbow-nsubjpass,clean_arg_token(A/0),g1(nsubjpass)]
+
+
+A reflector is used to reflect light especially on vehicles.
+
+	?a is used to reflect ?b	[used-root,add_root(used/3)_for_nsubjpass_from_(reflector/1),add_root(used/3)_for_xcomp_from_(reflect/5),l,n1,n1,n1,n1,n2,n2,u]
+		?a: A reflector	[reflector-nsubjpass,clean_arg_token(A/0),g1(nsubjpass)]
+		?b: light especially on vehicles	[light-dobj,clean_arg_token(especially/7),clean_arg_token(on/8),clean_arg_token(vehicles/9),g1(dobj),l]
+
+
+A star is a source of light energy through nuclear reactions.
+
+	?a is a source of light energy through nuclear reactions	[source-root,add_root(source/4)_for_nsubj_from_(star/1),n1,n1,n1,n1,n1,n1,n1,n1,n1,n2,u]
+		?a: A star	[star-nsubj,clean_arg_token(A/0),g1(nsubj)]
+
+
+A star is a source of light through nuclear reactions.
+
+	?a is a source of light through nuclear reactions	[source-root,add_root(source/4)_for_nsubj_from_(star/1),n1,n1,n1,n1,n1,n1,n1,n1,n2,u]
+		?a: A star	[star-nsubj,clean_arg_token(A/0),g1(nsubj)]
+
+
+A solar panel converts sunlight into electricity.
+
+	?a converts ?b into electricity	[converts-root,add_root(converts/3)_for_dobj_from_(sunlight/4),add_root(converts/3)_for_nsubj_from_(panel/2),n1,n1,n1,n2,n2,u]
+		?a: A solar panel	[panel-nsubj,clean_arg_token(A/0),clean_arg_token(solar/1),g1(nsubj)]
+		?b: sunlight	[sunlight-dobj,g1(dobj)]
+
+
+A white object reflects all visible light.
+
+	?a reflects ?b	[reflects-root,add_root(reflects/3)_for_dobj_from_(light/6),add_root(reflects/3)_for_nsubj_from_(object/2),n1,n2,n2,u]
+		?a: A white object	[object-nsubj,clean_arg_token(A/0),clean_arg_token(white/1),g1(nsubj)]
+		?b: all visible light	[light-dobj,clean_arg_token(all/4),clean_arg_token(visible/5),g1(dobj)]
+
+
+Absorbing sunlight causes objects to heat.
+
+	?a causes ?b to heat	[causes-root,add_root(causes/2)_for_dobj_from_(objects/3),add_root(causes/2)_for_nsubj_from_(sunlight/1),add_root(causes/2)_for_xcomp_from_(heat/5),l,n1,n1,n1,n2,n2,u]
+		?a: Absorbing sunlight	[sunlight-nsubj,clean_arg_token(Absorbing/0),g1(nsubj)]
+		?b: objects	[objects-dobj,g1(dobj)]
+
+
+A candle is a source of light when it is burned.
+
+	?a is a source of light	[source-root,add_root(source/4)_for_advcl_from_(burned/10),add_root(source/4)_for_nsubj_from_(candle/1),n1,n1,n1,n1,n1,n2,n3,u]
+		?a: A candle	[candle-nsubj,clean_arg_token(A/0),g1(nsubj)]
+	when ?a is burned	[burned-advcl,add_root(burned/10)_for_nsubjpass_from_(it/8),n1,n1,n2]
+		?a: it	[it-nsubjpass,g1(nsubjpass)]
+
+
+A desert environment usually has a lot of sunlight.
+
+	?a usually has ?b	[has-root,add_root(has/4)_for_dobj_from_(lot/6),add_root(has/4)_for_nsubj_from_(environment/2),n1,n1,n2,n2,u]
+		?a: A desert environment	[environment-nsubj,clean_arg_token(A/0),clean_arg_token(desert/1),g1(nsubj)]
+		?b: a lot of sunlight	[lot-dobj,clean_arg_token(a/5),clean_arg_token(of/7),clean_arg_token(sunlight/8),g1(dobj)]
+
+
+A revolution is when something revolves around something else.
+
+	?a is	[is-root,add_root(is/2)_for_advcl_from_(revolves/5),add_root(is/2)_for_nsubj_from_(revolution/1),n1,n2,n3,u]
+		?a: A revolution	[revolution-nsubj,clean_arg_token(A/0),g1(nsubj)]
+	when ?a revolves around something else	[revolves-advcl,add_root(revolves/5)_for_nsubj_from_(something/4),n1,n1,n1,n1,n2]
+		?a: something	[something-nsubj,g1(nsubj)]
+
+
+A complete revolution of the Earth around the sun takes one Earth year.
+
+	?a takes ?b Earth year	[takes-root,add_root(takes/9)_for_dobj_from_(one/10),add_root(takes/9)_for_nsubj_from_(revolution/2),n1,n1,n1,n2,n2,u]
+		?a: A complete revolution of the Earth around the sun	[revolution-nsubj,clean_arg_token(A/0),clean_arg_token(Earth/5),clean_arg_token(around/6),clean_arg_token(complete/1),clean_arg_token(of/3),clean_arg_token(sun/8),clean_arg_token(the/4),clean_arg_token(the/7),g1(nsubj)]
+		?b: one	[one-dobj,g1(dobj)]
+
+
+A complete revolution of the Earth around the sun takes one solar year.
+
+	?a takes ?b solar year	[takes-root,add_root(takes/9)_for_dobj_from_(one/10),add_root(takes/9)_for_nsubj_from_(revolution/2),n1,n1,n1,n2,n2,u]
+		?a: A complete revolution of the Earth around the sun	[revolution-nsubj,clean_arg_token(A/0),clean_arg_token(Earth/5),clean_arg_token(around/6),clean_arg_token(complete/1),clean_arg_token(of/3),clean_arg_token(sun/8),clean_arg_token(the/4),clean_arg_token(the/7),g1(nsubj)]
+		?b: one	[one-dobj,g1(dobj)]
+
+
+A revolution is when something revolves around something else.
+
+	?a is	[is-root,add_root(is/2)_for_advcl_from_(revolves/5),add_root(is/2)_for_nsubj_from_(revolution/1),n1,n2,n3,u]
+		?a: A revolution	[revolution-nsubj,clean_arg_token(A/0),g1(nsubj)]
+	when ?a revolves around something else	[revolves-advcl,add_root(revolves/5)_for_nsubj_from_(something/4),n1,n1,n1,n1,n2]
+		?a: something	[something-nsubj,g1(nsubj)]
+
+
+A revolution of the moon around the Earth takes 1 month.
+
+	?a takes 1 month	[takes-root,add_root(takes/8)_for_nsubj_from_(revolution/1),n1,n1,n1,n2,u]
+		?a: A revolution of the moon around the Earth	[revolution-nsubj,clean_arg_token(A/0),clean_arg_token(Earth/7),clean_arg_token(around/5),clean_arg_token(moon/4),clean_arg_token(of/2),clean_arg_token(the/3),clean_arg_token(the/6),g1(nsubj)]
+
+
+A planet is exposed to the heat of the star around which it revolves.
+
+	?a is exposed to the heat of the star	[exposed-root,add_root(exposed/3)_for_nsubjpass_from_(planet/1),n1,n1,n1,n1,n1,n1,n1,n1,n2,n3,u]
+		?a: A planet	[planet-nsubjpass,clean_arg_token(A/0),g1(nsubjpass)]
+	around which ?a revolves	[revolves-rcmod,add_root(revolves/13)_for_nsubj_from_(it/12),n1,n1,n2]
+		?a: it	[it-nsubj,g1(nsubj)]
+
+
+A satellite orbits a planet.
+
+	?a orbits ?b	[orbits-root,add_root(orbits/2)_for_dobj_from_(planet/4),add_root(orbits/2)_for_nsubj_from_(satellite/1),n1,n2,n2,u]
+		?a: A satellite	[satellite-nsubj,clean_arg_token(A/0),g1(nsubj)]
+		?b: a planet	[planet-dobj,clean_arg_token(a/3),g1(dobj)]
+
+
+Pluto is the planet that is ninth closest to the Sun.
+
+	?a is the planet	[planet-root,add_root(planet/3)_for_nsubj_from_(Pluto/0),n1,n1,n1,n2,n3,u]
+		?a: Pluto	[Pluto-nsubj,g1(nsubj)]
+	?a is ninth closest to the Sun	[closest-rcmod,add_root(closest/7)_for_nsubj_from_(that/4),n1,n1,n1,n1,n1,n2]
+		?a: that	[that-nsubj,g1(nsubj)]
+
+
+A planet rotating causes cycles of day and night on that planet.
+
+	?a causes ?b	[causes-root,add_root(causes/3)_for_dobj_from_(cycles/4),add_root(causes/3)_for_nsubj_from_(rotating/2),n1,n2,n2,u]
+		?a: A planet rotating	[rotating-nsubj,clean_arg_token(A/0),clean_arg_token(planet/1),g1(nsubj)]
+		?b: cycles of day and night on that planet	[cycles-dobj,clean_arg_token(and/7),clean_arg_token(day/6),clean_arg_token(night/8),clean_arg_token(of/5),clean_arg_token(on/9),clean_arg_token(planet/11),clean_arg_token(that/10),g1(dobj)]
+
+
+Earth is the planet that is third closest to the Sun.
+
+	?a is the planet	[planet-root,add_root(planet/3)_for_nsubj_from_(Earth/0),n1,n1,n1,n2,n3,u]
+		?a: Earth	[Earth-nsubj,g1(nsubj)]
+	?a is third closest to the Sun	[closest-rcmod,add_root(closest/7)_for_nsubj_from_(that/4),n1,n1,n1,n1,n1,n2]
+		?a: that	[that-nsubj,g1(nsubj)]
+
+
+what is the name of Justin Bieber's brother?
+
+	what is ?a	[what-root,add_root(what/0)_for_nsubj_from_(name/3),n1,n1,n2,u]
+		?a: the name of Justin Bieber 's brother	[name-nsubj,clean_arg_token('s/7),clean_arg_token(Bieber/6),clean_arg_token(Justin/5),clean_arg_token(brother/8),clean_arg_token(of/4),clean_arg_token(the/2),g1(nsubj)]
+
+
+What character did Natalie Portman play in star wars?
+
+	?a did ?b play in star wars	[play-root,add_root(play/5)_for_dobj_from_(character/1),add_root(play/5)_for_nsubj_from_(Portman/4),n1,n1,n1,n1,n1,n2,n2,u]
+		?a: What character	[character-dobj,clean_arg_token(What/0),g1(dobj)]
+		?b: Natalie Portman	[Portman-nsubj,clean_arg_token(Natalie/3),g1(nsubj)]
+
+
+Where did Donald Trump go to college?
+
+	Where did ?a go to college	[go-root,add_root(go/4)_for_nsubj_from_(Trump/3),n1,n1,n1,n1,n1,n2,u]
+		?a: Donald Trump	[Trump-nsubj,clean_arg_token(Donald/2),g1(nsubj)]
+
+
+What countries around the world speak french?
+	?a ?b speak french	[speak-root,add_root(speak/5)_for_dobj_from_(What/0),add_root(speak/5)_for_nsubj_from_(countries/1),n1,n1,n2,n2,u]
+		?a: What	[What-dobj,g1(dobj)]
+		?b: countries around the world	[countries-nsubj,clean_arg_token(around/2),clean_arg_token(the/3),clean_arg_token(world/4),g1(nsubj)]
+
+
